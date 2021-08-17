@@ -64,7 +64,8 @@
   <hr />
   <div class="hentry post no-border">
     <div class="entry-summary">
-      <img src="podium.PNG" alt="podium picture" class="home-thumbnail" width="350px" height="350px" style="text-align:justify"/>
+      <div class="your-element" data-tilt data-tilt-scale=".9">
+      <img src="podium.PNG" alt="podium picture" class="home-thumbnail" width="350px" height="350px" style="text-align:justify"/> </div> 
 
       <p style="margin-left: 60px; text-align: justify; margin-right: 60px">Hi! My name is Sergio, and I'm a senior mechanical engineering major at Texas Tech University.</p>
 
@@ -133,13 +134,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
   <script type="text/javascript">
-    VanillaTilt.init(document.querySelector(".your-element"), {
+    tilt.init(document.querySelector(".your-element"), {
       max: 25,
       speed: 400
     });
     
     //It also supports NodeList
-    VanillaTilt.init(document.querySelectorAll(".your-element"));
+    tilt.init(document.querySelectorAll(".your-element"));
   </script>
+
+  <script type="text/javascript" src="tilt.js"></script>
+
 </body>
 </html>
