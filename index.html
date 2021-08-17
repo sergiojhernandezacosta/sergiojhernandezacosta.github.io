@@ -14,6 +14,9 @@
   <link rel="stylesheet" id="font-bitter-css" href="https://fonts.googleapis.com/css?family=Bitter:400,700" type="text/css" media="screen" />
   <link rel="shortcut icon" type="image/x-icon" href="share.png" />
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
   <meta property="og:type" content="website" />
   <meta property="og:url" content="_blank" />
   
@@ -27,7 +30,14 @@
     <div id="header">
       <div id="branding">
         <h1 id="site-title">
-          <a title="Sergio Hernandez-Acosta" rel="Home">Sergio Hernandez-Acosta</a>
+          <a title="Sergio Hernandez-Acosta" rel="Home"> 
+          
+          <span
+            class="txt-rotate"
+            data-period="2000"
+            data-rotate='["Sergio Hernandez-Acosta"]'></span>
+
+          <script src="jquery.js" ></script> <!-- Load jQuery first -->
         </h1>
       </div>
 
@@ -62,12 +72,12 @@
 
       <p style="margin-left: 60px; text-align: justify; margin-right: 60px">As I progressed through my university years, I came to enjoy a plethora of interdisciplinary topics outside of engineering. 
       More specifically, I explored fields within computer science and software engineering. From there, I became interested in data science, machine learning, and web/app development. 
-      Hopefully, in between the 'Experience' and 'Skills' pages, this website will prove to be a testament to my many passions. 
-      I am excited to present this site as I only started delving into HTML, CSS, and JS. Learning to code and expand my skills outside of mechanical engineering has made for 
+      Hopefully, in between the 'Experience' and 'Skills' pages, this website will prove to be a testament to my ventures. 
+      I am excited to present this site as I only started delving into HTML, CSS, and JS as of recent. Learning to code and expand my skills outside of mechanical engineering has made for 
       many fun endeavors. 
       </p>
 
-      <p style="margin-left: 60px; text-align: justify; margin-right: 60px">In my free time I spend a large portion of my time reading, exercising, and spending time with loved ones.</p>
+      <p style="margin-left: 60px; text-align: justify; margin-right: 60px">In my free time I spend a large portion of my time reading, exercising, and spending time with loved ones. </p>
     </div>
     <hr />
   </div>
@@ -98,6 +108,8 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="/js/toc/toc.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="myscripts.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('.toc').toc({
@@ -114,6 +126,20 @@
       $('.jekyll-toc-header a.jekyll-toc-link-here span.jekyll-toc-icon').addClass('icon icon-link');
       $('.jekyll-toc-header a.jekyll-toc-back-to-top span.jekyll-toc-icon').addClass('icon icon-chevron-up');
     });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".your-element"), {
+      max: 25,
+      speed: 400
+    });
+    
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".your-element"));
   </script>
 </body>
 </html>
