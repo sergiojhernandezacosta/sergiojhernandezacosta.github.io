@@ -469,6 +469,107 @@ iframe.video { border:0; }
 
 #comments-template { clear: left; }
 
+
+
+/* Skills Page Container,Fly  
+-------------------------------------------------------------- */
+
+@charset "UTF-8";
+
+summary {
+  border: 3.5px solid transparent;
+  outline: none;
+  padding: 1rem;
+  display: block;
+  background-color: #4444;
+  color: white;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+  border-radius: 15px 15px 15px 15px;
+}
+
+details {
+  max-width: 100%;
+  width: 50%;
+  background-image: linear-gradient(to bottom right,#ffff, rgb(177,177,177));
+  box-sizing: border-box;
+  border-left: 10px;
+  border-right: 10px;
+  border-radius: 15px 15px 15px 15px;
+  overflow: hidden;
+}
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+
+@keyframes details-show {
+  from {
+    opacity:0;
+    transform: var(--details-translate, translateY(-0.5em));
+  }
+}
+
+details[open] > *:not(summary) {
+  animation: details-show 150ms ease-in-out;
+}
+
+
+summary:before {
+  content: '';
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+
+.skilltent {
+  border-top: none;
+  padding: 1em;
+  border-top: none;
+}
+
+
+
+.zoom {
+  /*padding: 50px; */
+  /*background-color: green; */
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.25); 
+}
+
+
+
+/* Report in Python Tab
+-------------------------------------------------------------- */
+
+.hide{
+  display: none;
+  position: inherit;
+}
+
+.PyBox:hover + .hide{
+  display: block;
+  color: rgb(78, 17, 17);
+  position: relative;
+  padding-bottom: 5%;
+}
+
+
 /* Primary menu
 -------------------------------------------------------------- */
 #menu-primary {
