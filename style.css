@@ -159,19 +159,19 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
   line-height: 1.3em;
 }
-h1 { font-size: 44px; }    /* 36 / 13 = 44 */
+h1 { font-size: 44px; }   
 h2 {
-  font-size: 29px;    /* 24 / 13 = 1.846153846153846 */
-  margin-top: 23px;       /* 35 / 24 = 1.458333333 */
+  font-size: 29px;   
+  margin-top: 23px;    
 }
-h3 { font-size: 24px; }    /* 20 / 13 = 1.538461538461538 */
-h4 { font-size: 22px; }    /* 18 / 13 = 1.384615384615385 */
+h3 { font-size: 24px; }   
+h4 { font-size: 22px; }  
 h5 {
-  font-size: 19px;    /* 16 / 13 = 1.230769230769231 */
+  font-size: 19px;  
   font-weight: bold;
 }
 h6 {
-  font-size: 17px;    /* 14 / 13 = 17 */
+  font-size: 17px;  
   font-weight: bold;
 }
 img {
@@ -553,20 +553,13 @@ summary:before {
 }
 
 
-
-/* Report in Python Tab
--------------------------------------------------------------- */
-
-.hide{
-  display: none;
-  position: inherit;
+details[open] summary ~ * {
+  animation: sweep .9s ease-in-out;
 }
 
-.PyBox:hover + .hide{
-  display: block;
-  color: rgb(78, 17, 17);
-  position: relative;
-  padding-bottom: 5%;
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
 }
 
 
