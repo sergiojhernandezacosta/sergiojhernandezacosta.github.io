@@ -1,0 +1,168 @@
+.hide {
+    display: none;
+}
+
+
+.fa-linkedin-in{
+    transition: transform .2s; /* Animation */
+} 
+.fa-linkedin-in:hover{
+    transform: scale(1.8); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+.fa-python{
+    transition: transform .2s; /* Animation */
+} 
+.fa-python:hover{
+    transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.fa-python:hover + .hide {
+    display: table-caption;
+    font-size: small;
+    padding-top: 20%;
+    text-align: center;
+}
+
+.fa-r-project{
+    transition: transform .2s; /* Animation */
+}
+.fa-r-project:hover {
+    transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.fa-r-project:hover + .hide {
+    display: table-caption;
+    font-size: small;
+    padding-top: 20%;
+    text-align: center;
+}
+
+
+.fa-database{
+    transition: transform .2s; /* Animation */
+}
+.fa-database:hover {
+    transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.fa-database:hover + .hide {
+    display: table-caption;
+    font-size: small;
+    padding-top: 20%;
+    text-align: center;
+}
+
+
+.fa-html5{
+    transition: transform .2s; /* Animation */
+}
+.fa-html5:hover {
+    transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.fa-html5:hover + .hide {
+    display: table-caption;
+    font-size: small;
+    padding-top: 20%;
+    text-align: center;
+}
+
+
+.fa-css3-alt{
+    transition: transform .2s; /* Animation */
+} 
+.fa-css3-alt:hover {
+    transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}  
+.fa-css3-alt:hover + .hide {
+    display: table-caption;
+    font-size: small;
+    padding-top: 20%;
+    text-align: center;
+}
+
+
+.fa-js-square{
+    transition: transform .2s; /* Animation */
+}
+.fa-js-square:hover {
+    transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+} 
+.fa-js-square:hover + .hide {
+    display: table-caption;
+    font-size: small;
+    padding-top: 20%;
+    text-align: center;
+}
+
+
+.fa-git-alt{
+    transition: transform .2s; /* Animation */
+}
+.fa-git-alt:hover {
+    transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+} 
+.fa-git-alt:hover + .hide {
+    display: table-caption;
+    font-size: small;
+    padding-top: 20%;
+    text-align: center;
+}
+
+
+.fa-c{
+    transition: transform .2s; /* Animation */
+}
+.fa-c:hover {
+    transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+} 
+.fa-c:hover + .hide {
+    display: table-caption;
+    font-size: small;
+    padding-top: 20%;
+    text-align: center;
+}
+
+
+.fab-java{
+    transition: transform .2s; /* Animation */
+}
+.fab-java:hover {
+    transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+} 
+.fab-java:hover + .hide {
+    display: table-caption;
+    font-size: small;
+    padding-top: 20%;
+    text-align: center;
+}
+
+.fa-linux{
+    transition: transform .2s; /* Animation */
+}
+.fa-linux:hover {
+    transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+} 
+.fa-linux:hover + .hide {
+    display: table-caption;
+    font-size: small;
+    padding-top: 20%;
+    text-align: center;
+}
+
+
+.img-fluid{
+    transition: transform .2s; /* Animation */
+}
+.img-fluid:hover {
+    transform: scale(1.375); 
+} 
+
+
+/* Coloring the headers, h2's (i.e. experience, involvement, etc.) */
+h2 {
+    background: linear-gradient(180deg, #5f0a87 0%, #d18dbd 75%); 
+    -webkit-text-fill-color: transparent;
+    text-align: center; 
+    font-weight: bold;
+    -webkit-background-clip: text!important
+}
